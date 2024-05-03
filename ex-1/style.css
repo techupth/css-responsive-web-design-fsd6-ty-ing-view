@@ -1,1 +1,98 @@
 /* Start coding here */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.header {
+  padding: 50px;
+  text-align: center;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container1 {
+  padding: 50px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 5%;
+}
+.container2 {
+  padding: 50px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 5%;
+}
+.box {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  position: relative;
+}
+.box.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background: orange;
+}
+.button:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+span {
+  font-size: 2rem;
+}
+p {
+  padding: 5px 5px 5px 0px;
+  font-size: 1.5rem;
+}
+h2 {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.5rem;
+}
+h3 {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1rem;
+}
+h4 {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container1 {
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container2 {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
