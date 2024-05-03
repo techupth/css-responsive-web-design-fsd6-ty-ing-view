@@ -1,1 +1,146 @@
-/* Start coding here */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.backGround {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Heading {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.orange-box {
+  position: absolute;
+  background-color: #ff8345;
+  width: 60px;
+  height: 15px;
+  bottom: 5px;
+  z-index: 1;
+}
+
+.header1 {
+  color: #183b56;
+  position: relative;
+  z-index: 3;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
+}
+
+.Upper-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Lower-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Box {
+  display: inline-block;
+  position: relative;
+  width: 333px;
+  height: 268px;
+  border: 3px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.Big-text {
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Small-text {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.Explore {
+  position: relative;
+  background-color: #ff8345;
+}
+
+.ExploreMore {
+  position: absolute;
+  left: 50px;
+  top: 90px;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.Circle1 {
+  width: 65px;
+  height: 65px;
+  background-color: #ff8345;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.Circle2 {
+  width: 65px;
+  height: 65px;
+  background-color: #ff8345;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+i {
+  color: #183b56;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.Explore i {
+  color: white;
+}
+
+#icons {
+  color: #ff8345;
+  font-size: 42px;
+  position: absolute;
+  top: 37px;
+  left: 37px;
+}
+
+.Acconting #icons {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .Upper-row {
+    flex-direction: column;
+  }
+  .Lower-row {
+    flex-direction: column;
+  }
